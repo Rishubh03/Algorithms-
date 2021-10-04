@@ -6,13 +6,13 @@ The process in which a function calls itself directly or indirectly is called re
 
 In the recursive program, the solution to the base case is provided and the solution of the bigger problem is expressed in terms of smaller problems. 
 
-int fact(int n)
+`int fact(int n)
 {
     if (n < = 1) // base case
         return 1;
     else    
         return n*fact(n-1);    
-}
+}`
 
 # How a particular problem is solved using recursion? 
 
@@ -24,7 +24,7 @@ int fact(int n)
 If the base case is not reached or not defined, then the stack overflow problem may arise. 
 
 Example 
-int fact(int n)
+`int fact(int n)
 {
     // wrong base case (it may cause
     // stack overflow).
@@ -33,14 +33,14 @@ int fact(int n)
 
     else
         return n*fact(n-1);
-}
+}`
 
 # What is the difference between direct and indirect recursion? 
 
 A function fun is called direct recursive if it calls the same function fun.
 A function fun is called indirect recursive if it calls another function say fun_new and fun_new calls fun directly or indirectly. 
 
-// An example of direct recursion
+`// An example of direct recursion
 
 void directRecFun()
 {
@@ -68,7 +68,7 @@ void indirectRecFun2()
     indirectRecFun1();
 
     // Some code...
-}
+}`
 
 Sample Problems:
 
